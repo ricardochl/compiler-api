@@ -1,0 +1,10 @@
+Declare Function main
+Declare 0 Integer variable number 
+Print  Enter
+Print  an
+Print  integer:
+Enter Integer number
+Print  You
+Print  entered
+Print Integer number
+function Returns 0

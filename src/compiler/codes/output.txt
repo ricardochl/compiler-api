@@ -1,0 +1,7 @@
+Declarar Función main
+   Declarar Integer Array matriz
+   Declarar Integer Array 0]
+   Declarar Integer variable 0] 
+   Iniciar un ciclo desde int i = 0 hasta  i < 10
+      Iniciar un ciclo desde int j = 0 hasta  j < 10
+   Devolución de Función 0
