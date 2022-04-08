@@ -13,7 +13,7 @@ const { c, cpp } = require("compile-run");
 
 
 //Variables
-
+const PORT = process.env.PORT || 5000;
 const compiler = "g++";
 const version = "-std=c++17";
 const out ="-o";
@@ -111,6 +111,6 @@ app.post('/translate', (req, res) => {
 
   
   // starting the server
-app.listen(3000, () => {
-    console.log('listening on port 3000');
+app.listen(PORT, () => {
+    console.log(`listening on port ${PORT}`);
 });
