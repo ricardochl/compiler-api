@@ -13,16 +13,11 @@ const { c, cpp } = require("compile-run");
 
 
 //Variables
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 const compiler = "g++";
 const version = "-std=c++17";
 const out ="-o";
 
-var corsOptions = {
-  origin: 'https://procesador-de-lenguaje.netlify.app',
-  optionsSuccessStatus: 200,
-  methods: "GET, POST"
-}
 
 //Local Imports
 
@@ -37,7 +32,7 @@ const ads = [
 app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors(corsOptions));
+app.use(cors({origin:'*'}));
 app.use(morgan('combined'));
 
 app.get('/', (req, res) => {
