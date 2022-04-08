@@ -19,8 +19,9 @@ const version = "-std=c++17";
 const out ="-o";
 
 var corsOptions = {
-  origin: '*',
-  optionsSuccessStatus: 200
+  origin: 'https://procesador-de-lenguaje.netlify.app',
+  optionsSuccessStatus: 200,
+  methods: "GET, POST"
 }
 
 //Local Imports
