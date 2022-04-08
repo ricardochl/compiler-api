@@ -32,7 +32,7 @@ const ads = [
 app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors({origin:'*', credentials: true}));
+app.use(cors());
 app.use(morgan('combined'));
 
 app.get('/', (req, res) => {
