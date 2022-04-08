@@ -18,6 +18,11 @@ const compiler = "g++";
 const version = "-std=c++17";
 const out ="-o";
 
+var corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200
+}
+
 //Local Imports
 
 const { createFile } = require("./utils");
@@ -31,7 +36,7 @@ const ads = [
 app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(morgan('combined'));
 
 app.get('/', (req, res) => {
