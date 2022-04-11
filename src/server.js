@@ -62,7 +62,7 @@ app.post('/compile', (req, res) => {
     if (error) {
       // console.error(`error: ${error.message}`);
       console.log(stderr);
-      console.log(`${SRC_DIR}`)
+      console.log(stderr.replace(`${SRC_DIR}/compiler/codes/`, ''))
       // .replaceAll(`${SRC_DIR}/compiler/codes/`, '')
       // return res.status(400).send(stderr.replaceAll(`${SRC_DIR}/compiler/codes/`, ''));
       
