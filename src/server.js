@@ -60,7 +60,9 @@ app.post('/compile', (req, res) => {
 
   exec(`g++ -std=c++17 ${SRC_DIR}/compiler/codes/program.cpp`, (error, stdout, stderr) => {
     if (error) {
-      console.error(`error: ${error.message}`);
+      // console.error(`error: ${error.message}`);
+      console.log(stderr);
+      console.log(`${SRC_DIR}`)
       // .replaceAll(`${SRC_DIR}/compiler/codes/`, '')
       // return res.status(400).send(stderr.replaceAll(`${SRC_DIR}/compiler/codes/`, ''));
       
